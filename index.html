@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Task 18</title>
+</head>
+<body>
+    
+
+
+    <script>
+        var storeNum = [102, 110, 109, 235, 200, 949, 546, 120, 149, 285, 290, 959, 506, 410, 509, 635, 270, 849, 746];
+        for (let i=0; i<storeNum.length; i++){
+            storeNum[i]%5 ==0? document.write(`index ${i} holds number ${storeNum[i]}<br>`): null
+        }
+    </script>
+
+    <script>
+        for (let i=50; i>= 0; i--){
+            if (i>=30 && i%2==0){document.write(`${i}<br>`)};
+            if (i<=30  && i%2==1){document.write(`${i}<br>`)};
+            if (i==5){break};
+        }
+    </script>
+    <script>
+        //Labtask parent.l=15
+        var  allQuotes = [["IT ALWAYS SEEMS IMPOSSIBLE UNTIL IT'S DONE", 'Nelson Mandela', 'South African'], ["DO NOT JUDGE ME BY MY SUCCESSES, JUDGE ME BY HOW MANY TIMES I FELL DOWN AND GOT BACK UP AGAIN.", 'Nelson Mandela', 'South African'], ["THERE CAN BE NO KEENER REVELATION OF A SOCIETY’S SOUL THAN THE WAY IN WHICH IT TREATS ITS CHILDREN.", 'Nelson Mandela', 'South African'], ["I LEARNED THAT COURAGE WAS NOT THE ABSENCE OF FEAR, BUT THE TRIUMPH OVER IT.", 'Nelson Mandela', 'South African'], ["FOR TO BE FREE IS NOT MERELY TO CAST OFF ONE’S CHAINS, BUT TO LIVE IN A WAY THAT RESPECTS AND ENHANCES THE FREEDOM OF OTHERS.", 'Nelson Mandela', 'South African'], ['We are not makers of history. We are made by history.', 'Martin Luther King Jr.', 'American'], ['Every man must decide whether he will walk in the light of creative altruism or in the darkness of destructive selfishness.', 'Martin Luther King Jr.', 'American'], ['Science investigates; religion interprets. Science gives man knowledge, which is power; religion gives man wisdom, which is control. Science deals mainly with facts; religion deals mainly with values. The two are not rivals.', 'Martin Luther King Jr.', 'American'], ['We must use time creatively, in the knowledge that the time is always ripe to do right.', 'Martin Luther King Jr.', 'American'], ['There is nothing more tragic than to find an individual bogged down in the length of life, devoid of breadth.', 'Martin Luther King Jr.', 'American'], ['A tiger does not shout its tigritude, it pounces.', 'Wole Soyinka.', 'Nigerian'], ['Just like birds, Hunters know no borders.', 'Wole Soyinka.', 'Nigerian'], ['And I believe that the best learning process of any kind of craft is just to look at the work of others.', 'Wole Soyinka.', 'Nigerian'], ['Education is lacking in most of those who pontificate.', 'Wole Soyinka.', 'Nigerian'], ['But the ultimate lesson is just sit down and write. That’s all.', 'Wole Soyinka.', 'Nigerian'], ['But when you’re deprived of it for a lengthy period then you value human companionship. But you have to survive and so you devise all kinds of mental exercises and it’s amazing.', 'Wole Soyinka.', 'Nigerian'] ]; 
+
+        document.write(`<table border=1><tr><th>S/N</th><th>Quotes</th><th>Author</th><th>Nationality</th></tr>`);
+        for (var i=0; i<allQuotes.length; i++){
+            document.write(`<tr><td>${i+1}</td>`);
+                for (var j = 0; j<allQuotes[i].length; j++){
+                    document.write(`<td>${allQuotes[i][j]}</td>`)
+                }
+                document.write(`</tr>`);
+        }
+        document.write(`</table>`);
+
+    </script>
+</body>
+</html>
